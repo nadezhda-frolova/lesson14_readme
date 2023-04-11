@@ -13,7 +13,7 @@ public class ResumeCreation extends TestBase {
 
     @Test
     void resumeCreation() {
-        step("На главной странице нажать на кнопку Создать резюме", () ->
+        step("На главной странице нажать на кнопку 'Создать резюме'", () ->
                 mainPage.createResume());
         step("Переход на страницу с регистрацией соискателя", () ->
                 resultsPage.registrationPageOpened());
