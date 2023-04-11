@@ -73,18 +73,24 @@ gradle clean test -Denv=local
   <img src="media/screen/jenkins_behaviors.png" alt="allure-report_1" width="900">
 </p>
 
-## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/22026/)
+## <img width="4%" title="Allure TestOPS" src="media/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/2166/)
 
-### Основной дашборд
+### Страница с пройденным прогоном
 
 <p align="center">
-  <img src="media/screen/dashboards.png" alt="dashboard" width="900">
+  <img src="media/screen/resultspage.png" alt="dashboard" width="900">
 </p>
 
 ### Список тестов с результатами прогона
 
 <p align="center">
-  <img src="media/screen/allure-testops-results.png" alt="dashboard" width="900">
+  <img src="media/screen/testcaseslist.png" alt="dashboard" width="900">
+</p>
+
+### Развернутая информация с указанием причины ошибки
+
+<p align="center">
+  <img src="media/screen/mistakes.png" alt="dashboard" width="900">
 </p>
 
 ## <img width="4%" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram
@@ -93,10 +99,14 @@ gradle clean test -Denv=local
 <p align="center">
 <img title="Telegram Notifications" src="media/screen/Telegram.png">
 
-## <img width="4%" title="Browserstack" src="media/logo/Browserstack.svg"> Пример запуска теста в Browserstack
 
 К каждому тесту в отчете прилагается видео.
 
 На данном видео выполняется:
 
-- Проверка некорректного открытия статьи
+
+- Проверка перехода с главной страницы на страницу вакансий QA
+  
+<p align="center">
+  <img title="Selenoid Video" src="images/video/QAVacanciesSearch.mp4">
+</p>
