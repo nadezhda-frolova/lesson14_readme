@@ -2,14 +2,17 @@ package test4;
 
 import helpers.TestBase;
 import org.junit.jupiter.api.Test;
+import pages.MainPage;
+import pages.ResultsPage;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 
 public class LoginButtonExists extends TestBase {
+    ResultsPage resultsPage = new ResultsPage();
+
     @Test
-    void loginButtonExists(){
-        $("[data-qa=login]").shouldHave(text("Войти"));
+    void loginButtonExists() {
+        step("текст", () ->
+                resultsPage.loginButtonExists());
     }
 }

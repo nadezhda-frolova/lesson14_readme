@@ -2,16 +2,23 @@ package test2;
 
 import helpers.TestBase;
 import org.junit.jupiter.api.Test;
+import pages.MainPage;
+import pages.ResultsPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 
 public class QaVacancy extends TestBase {
-    @Test
+    MainPage mainPage = new MainPage();
+    ResultsPage resultsPage = new ResultsPage();
 
-    void VacancySearch(){
-        $("#a11y-search-input").setValue("QA").pressEnter();
-        $("[data-qa=wizard-search-name]").shouldHave(text("QA"));
+    @Test
+    void VacancySearch() {
+        step("текст", () ->
+               mainPage.setValueQA());
+        step("текст", () ->
+                resultsPage.qaVacanciesFound());
     }
 }
+

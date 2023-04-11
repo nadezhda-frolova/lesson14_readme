@@ -2,15 +2,20 @@ package test5;
 
 import helpers.TestBase;
 import org.junit.jupiter.api.Test;
+import pages.MainPage;
+import pages.ResultsPage;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 
 public class HelpOfExpertPageOpens extends TestBase {
+    MainPage mainPage = new MainPage();
+    ResultsPage resultsPage = new ResultsPage();
+
     @Test
-    void helpOfExpertPageOpens(){
-        $("[data-qa=mainmenu_expertresume]").click();
-        $(".Hk5ajsi___promo-button-container").shouldHave(text("Какие задачи поможет решить эксперт?"));
+    void helpOfExpertPageOpens() {
+        step("текст", () ->
+                mainPage.helpOfExpertPageButton());
+        step("текст", () ->
+                resultsPage.helpOfExpertsPageOpened());
     }
 }

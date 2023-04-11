@@ -2,15 +2,20 @@ package test3;
 
 import helpers.TestBase;
 import org.junit.jupiter.api.Test;
+import pages.MainPage;
+import pages.ResultsPage;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 
 public class ResumeCreation extends TestBase {
+    MainPage mainPage = new MainPage();
+    ResultsPage resultsPage = new ResultsPage();
+
     @Test
-    void resumeCreation(){
-        $("[data-qa=signup]").shouldHave(text("Создать резюме")).click();
-        $("[data-qa=bloko-header-1]").shouldHave(text("Регистрация соискателя"));
+    void resumeCreation() {
+        step("текст", () ->
+                mainPage.createResume());
+        step("текст", () ->
+                resultsPage.registrationPageOpened());
     }
 }
