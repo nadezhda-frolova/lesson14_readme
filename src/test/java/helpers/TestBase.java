@@ -19,8 +19,8 @@ public class TestBase {
         WebDriver.configure();
     }
 
-    @BeforeEach
-    void openPage() {
+    @BeforeAll
+    static void openPage() {
         step("Открыть главную страницу 'ХедХантерКазань'", () ->
                 open("https://kazan.hh.ru/"));
     }
