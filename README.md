@@ -13,7 +13,7 @@
 - [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-Allure-report)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
 - [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Пример запуска теста в Browserstack](#-пример-запуска-теста-в-Browserstack)
+
 
 ## :gear: Технологии и инструменты
 
@@ -31,11 +31,11 @@
 
 ## :heavy_check_mark: Тест кейсы
 
-- Проверка прохождения начальных экранов
-- Проверка перехода на страницу входа
-- Проверка поиска
-- Проверка корректного открытия статьи
-- Проверка некорректного открытия статьи
+- Проверка перехода с главной страницы на страницу вакансий
+- Проверка перехода с главной страницы на страницу вакансий QA
+- Проверка перехода с главной страницы на страницу с регистрацией соискателя
+- Проверка наличия кнопки 'Войти' на главной странице сайта
+- Проверка перехода с главной страницы на страницу консультации экспертов
 
 ## :computer: Запуск тестов из терминала
 
@@ -62,7 +62,7 @@ gradle clean test -Denv=local
 После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
 значок *Allure Report* и *Allure TestOps* кликнув по которому, откроется страница со сформированным html-отчетом и тестовой документацией.
 
-## <img width="4%" title="Allure Report" src="media/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/SUkhinin_diplom_mobile/)
+## <img width="4%" title="Allure Report" src="media/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/nadezhda-frolova.lesson14_readme/allure/)
 
 
 <p align="center">
@@ -100,8 +100,3 @@ gradle clean test -Denv=local
 На данном видео выполняется:
 
 - Проверка некорректного открытия статьи
-
-
-<p align="center">
-  <img title="Browserstack Video" src="media/video/mobile_browserstack_test.gif">
-</p>

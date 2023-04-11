@@ -15,7 +15,7 @@ public class HelpOfExpertPageOpens extends TestBase {
     void helpOfExpertPageOpens() {
         step("На главной странице кликнуть на кнопку 'Готовое резюме'", () ->
                 mainPage.helpOfExpertPageButton());
-        step("Переход на страницу помощи экспертов", () ->
+        step("Переход на страницу консультации экспертов", () ->
                 resultsPage.helpOfExpertsPageOpened());
     }
 }
