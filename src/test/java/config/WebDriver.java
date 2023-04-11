@@ -30,4 +30,3 @@ public class WebDriver {
         Configuration.browserCapabilities = capabilities;
     }
 }
-

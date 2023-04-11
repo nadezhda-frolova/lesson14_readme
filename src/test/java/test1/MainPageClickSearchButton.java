@@ -8,8 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPageClickSearchButton {
     @Test
-
-            void mainPageClickSearchButton(){
+    void mainPageClickSearchButton() {
         $("[data-qa=search-button]").click();
         $("[data-qa=bloko-header-3]").shouldHave(text("Найдено"));
 
