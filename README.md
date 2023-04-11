@@ -108,5 +108,5 @@ gradle clean test -Denv=local
 - Проверка перехода с главной страницы на страницу вакансий QA
 
 <p align="center">
-  <img title="Selenoid Video" src="images/video/results.gif">
+  <img title="Selenoid Video" src="media/video/results.gif">
 </p>
