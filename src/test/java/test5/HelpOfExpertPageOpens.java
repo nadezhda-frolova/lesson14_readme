@@ -1,12 +1,13 @@
 package test5;
 
+import helpers.TestBase;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class HelpOfExpertPageOpens {
+public class HelpOfExpertPageOpens extends TestBase {
     @Test
     void helpOfExpertPageOpens(){
         $("[data-qa=mainmenu_expertresume]").click();
