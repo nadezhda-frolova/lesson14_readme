@@ -1,4 +1,4 @@
-# Дипломный проект по тестированию UI сайта [https://kazan.hh.ru/](https://kazan.hh.ru/)
+# Дипломный проект по тестированию UI сайта [https://kazan.hh.ru/](https://kazan.hh.ru)
 
 <p align="center">
   <img src="media/logo/HeadHunter_logo.png" alt="HeadHunter" width="200">
