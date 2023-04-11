@@ -13,9 +13,9 @@ public class MainPageClickSearchButton extends TestBase {
 
     @Test
     void mainPageClickSearchButton() {
-        step("текст", () ->
+        step("нажать кнопку Найти работу", () ->
                 mainPage.clickSearchButton());
-        step("текст", () ->
+        step("Открылась страница с вакансиями", () ->
                 resultsPage.resultsFound());
 
     }

@@ -12,7 +12,7 @@ public class LoginButtonExists extends TestBase {
 
     @Test
     void loginButtonExists() {
-        step("текст", () ->
+        step("На главной странице есть кнопка 'Войти", () ->
                 resultsPage.loginButtonExists());
     }
 }

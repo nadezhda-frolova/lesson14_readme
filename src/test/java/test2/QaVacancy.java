@@ -15,9 +15,9 @@ public class QaVacancy extends TestBase {
 
     @Test
     void VacancySearch() {
-        step("текст", () ->
+        step("На главной странице в поле поиска написать 'QA', нажать Enter", () ->
                mainPage.setValueQA());
-        step("текст", () ->
+        step("Переход на страницу с вакансиями QA", () ->
                 resultsPage.qaVacanciesFound());
     }
 }
