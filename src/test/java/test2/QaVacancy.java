@@ -10,7 +10,6 @@ public class QaVacancy {
     @Test
 
     void VacancySearch(){
-        open("https://kazan.hh.ru/");
         $("#a11y-search-input").setValue("QA").pressEnter();
         $("[data-qa=wizard-search-name]").shouldHave(text("QA"));
     }

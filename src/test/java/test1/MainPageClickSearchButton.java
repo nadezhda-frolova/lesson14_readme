@@ -10,7 +10,6 @@ public class MainPageClickSearchButton {
     @Test
 
             void mainPageClickSearchButton(){
-        open("https://kazan.hh.ru/");
         $("[data-qa=search-button]").click();
         $("[data-qa=bloko-header-3]").shouldHave(text("Найдено"));
 

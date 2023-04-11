@@ -9,7 +9,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class HelpOfExpertPageOpens {
     @Test
     void helpOfExpertPageOpens(){
-        open("https://kazan.hh.ru/");
         $("[data-qa=mainmenu_expertresume]").click();
         $(".Hk5ajsi___promo-button-container").shouldHave(text("Какие задачи поможет решить эксперт?"));
     }
