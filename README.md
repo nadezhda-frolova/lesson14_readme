@@ -1,4 +1,4 @@
-# Дипломный проект по тестированию UI сайта [https://kazan.hh.ru/](https://kazan.hh.ru)
+# Дипломный проект по тестированию UI сайта [https://kazan.hh.ru](https://kazan.hh.ru)
 
 <p align="center">
   <img src="media/logo/HeadHunter_logo.png" alt="HeadHunter" width="200">
@@ -59,8 +59,8 @@ gradle clean test -Denv=local
   <img src="media/screen/start_jenkins.png" alt="Jenkins" width="800">  
 </p>
 
-После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
-значок *Allure Report* и *Allure TestOps* кликнув по которому, откроется страница со сформированным html-отчетом и тестовой документацией.
+После выполнения сборки в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
+значок *Allure Report* и *Allure TestOps*, кликнув по которому откроется страница со сформированным html-отчетом и тестовой документацией.
 
 ## <img width="4%" title="Allure Report" src="media/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/nadezhda-frolova.lesson14_readme/allure/)
 
@@ -103,7 +103,6 @@ gradle clean test -Denv=local
 К каждому тесту в отчете прилагается видео.
 
 На данном видео выполняется:
-
 
 - Проверка перехода с главной страницы на страницу вакансий QA
 
