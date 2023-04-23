@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ResultsPage {
     public ResultsPage checkResultsFound() {
-        $("[data-qa=bloko-header-3]").shouldHave(text("Найдено"));
+        $(".supernova-search-group").$("[value]").shouldHave(text("Найдено"));
         return this;
     }
 
