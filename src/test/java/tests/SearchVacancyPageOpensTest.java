@@ -22,7 +22,7 @@ public class SearchVacancyPageOpensTest extends TestBase {
     void searchVacancy(String vacancies) {
         step("На главной странице в поле поиска написать вакансию" + ", нажать Enter", () ->
                 mainPage.searchVacancy(vacancies));
-        step("Переход на страницу с вакансиями", () ->
+        step("Переход на страницу с вакансией, указанной в поисковой строке", () ->
                 resultsPage.verifySearchFieldResult(vacancies));
     }
 }

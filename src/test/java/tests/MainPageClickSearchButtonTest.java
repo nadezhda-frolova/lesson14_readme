@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-public class MainPageSearchButtonExistsTest extends TestBase {
+public class MainPageClickSearchButtonTest extends TestBase {
     @Epic("Main Page")
     @Owner(value = "Frolova Nadezhda")
     @Severity(SeverityLevel.CRITICAL)
