@@ -4,7 +4,6 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -19,7 +18,7 @@ public class SearchVacancyPageOpensTest extends TestBase {
             strings = {"Аналитик", "Разработчик", "QA"}
     )
 
-    @ParameterizedTest(name = "При переходе на страницу поиска вакансии {0} в поле поиска отображается {0}")
+    @ParameterizedTest(name = "При переходе на страницу поиска вакансии {0} в поле поиска отображается вакансия {0}")
     void searchVacancy(String vacancies) {
         step("На главной странице в поле поиска написать вакансию" + ", нажать Enter", () ->
                 mainPage.searchVacancy(vacancies));
