@@ -4,27 +4,27 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class ResultsPage {
-    public ResultsPage resultsFound() {
+    public ResultsPage checkResultsFound() {
         $("[data-qa=bloko-header-3]").shouldHave(text("Найдено"));
         return this;
     }
 
-    public ResultsPage qaVacanciesFound() {
-        $("[data-qa=wizard-search-name]").shouldHave(text("QA"));
+    public ResultsPage verifySearchFieldResult(String vacancies) {
+        $("[data-qa=search-input]").shouldHave(text(vacancies));
         return this;
     }
 
-    public ResultsPage loginButtonExists() {
+    public ResultsPage checkLoginButton() {
         $("[data-qa=login]").shouldHave(text("Войти"));
         return this;
     }
 
-    public ResultsPage registrationPageOpened() {
+    public ResultsPage checkRegistrationPageOpens() {
         $("[data-qa=bloko-header-1]").shouldHave(text("Регистрация соискателя"));
         return this;
     }
 
-    public ResultsPage helpOfExpertsPageOpened() {
+    public ResultsPage checkExpertResumePageOpened() {
         $(".Hk5ajsi___promo-button-container").shouldHave(text("Какие задачи поможет решить эксперт?"));
         return this;
     }

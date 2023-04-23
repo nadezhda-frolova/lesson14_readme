@@ -9,8 +9,8 @@ public class MainPage {
         return this;
     }
 
-    public MainPage setValueQA() {
-        $("#a11y-search-input").setValue("QA").pressEnter();
+    public MainPage searchVacancy(String vacancies) {
+        $("#a11y-search-input").setValue(vacancies).pressEnter();
         return this;
     }
 
@@ -19,7 +19,7 @@ public class MainPage {
         return this;
     }
 
-    public MainPage helpOfExpertPageButton() {
+    public MainPage clickExpertResumeButton() {
 
         $("[data-qa=mainmenu_expertresume]").click();
         return this;
