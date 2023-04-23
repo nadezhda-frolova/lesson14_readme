@@ -10,7 +10,7 @@ public class ResultsPage {
     }
 
     public ResultsPage verifySearchFieldResult(String vacancies) {
-        $(".supernova-navi-search-form").shouldHave(text(vacancies));
+        $(".bloko-input-text-wrapper_icon-right").$("[value=vacancies]");
         return this;
     }
 
