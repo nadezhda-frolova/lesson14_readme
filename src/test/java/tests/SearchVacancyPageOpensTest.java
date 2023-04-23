@@ -21,7 +21,7 @@ public class SearchVacancyPageOpensTest extends TestBase {
 
     @ParameterizedTest(name = "При переходе на страницу поиска вакансии {0} в поле поиска отображается {0}")
     void searchVacancy(String vacancies) {
-        step("На главной странице в поле поиска написать 'QA', нажать Enter", () ->
+        step("На главной странице в поле поиска написать вакансию  + vacancies + , нажать Enter", () ->
                 mainPage.searchVacancy(vacancies));
         step("Переход на страницу с вакансиями", () ->
                 resultsPage.verifySearchFieldResult(vacancies));
