@@ -10,7 +10,7 @@ public class ResultsPage {
     }
 
     public ResultsPage verifySearchFieldResult(String vacancies) {
-        $(".supernova-search-group__input").$("[value]").shouldHave(text(vacancies));
+        $(".supernova-navi-search-form").shouldHave(text(vacancies));
         return this;
     }
 
