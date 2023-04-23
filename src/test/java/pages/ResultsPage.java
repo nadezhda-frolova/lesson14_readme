@@ -5,12 +5,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ResultsPage {
     public ResultsPage checkResultsFound() {
-        $(".supernova-search-group").$("[value]").shouldHave(text("Найдено"));
+        $("[data-qa=bloko-header-3]").shouldHave(text("Найдено"));
         return this;
     }
 
     public ResultsPage verifySearchFieldResult(String vacancies) {
-        $("[data-qa=search-input]").shouldHave(text(vacancies));
+        $(".supernova-search-group__input").$("[value]").shouldHave(text(vacancies));
         return this;
     }
 
